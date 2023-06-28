@@ -28,6 +28,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* 新加入 
+从https://www.lianhuatv.cn/3415.html获得的灵感
+*/
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	}
+.video iframe,
+.video object,
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* 新加入 */
+
+
 body {
 	line-height: 1;
 }
@@ -3211,6 +3232,39 @@ input, select, textarea {
 			width: 75em;
 		}
 
+		
+/* 新加的 */
+		.wrapper > .innernouplowpadding {
+			padding: 0em 5em 0em 5em ;
+			max-width: 100%;
+			width: 75em;
+		}
+
+		.wrapper > .innernouppadding {
+			padding: 0em 5em 3em 5em ;
+			max-width: 100%;
+			width: 75em;
+		}
+
+		.wrapper > .innernolowpadding {
+			padding: 5em 5em 0em 5em ;
+			max-width: 100%;
+			width: 75em;
+		}
+
+
+		.wrapper > .innern > .innermid {
+			width: 5000;
+			height: 50px;
+			border: 1px lightcoral;/*红背景色*/
+			position: absolute;/*重要*/ /*子类绝对布局必填*/
+			left: 0;/*重要*/
+			right: 0;/*重要*/
+			margin: auto;/*重要*/
+		}
+/* 新加的结束 */
+
+
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
@@ -3907,3 +3961,5 @@ input, select, textarea {
 			}
 
 		}
+
+
