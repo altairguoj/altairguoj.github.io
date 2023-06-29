@@ -3253,15 +3253,6 @@ input, select, textarea {
 		}
 
 
-		.wrapper > .innern > .innermid {
-			width: 5000;
-			height: 50px;
-			border: 1px lightcoral;/*红背景色*/
-			position: absolute;/*重要*/ /*子类绝对布局必填*/
-			left: 0;/*重要*/
-			right: 0;/*重要*/
-			margin: auto;/*重要*/
-		}
 /* 新加的结束 */
 
 

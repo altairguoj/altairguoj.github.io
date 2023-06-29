@@ -6,7 +6,8 @@
 
 /* 音乐播放器主体 */
 .play_box{
-    width:500px;
+    width:75%;
+    max-width: 500px;
     height: 50px;
     /* position: absolute;   left: 50%; */
     position: relative; top: 5px;
@@ -38,7 +39,7 @@
 */
 .play_box > .state{
     width: 50px;
-    height: 50px;
+    max-height: 50px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -56,7 +57,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10;
-    color: #FA7921;
+    color: #3e4094;
     font-size: 20px;
     text-shadow: 0 0 10px #FA7921;
     cursor: pointer;
@@ -64,13 +65,17 @@
 
 /* 进度条组件和切换曲目组件 */
 .play_box > .progress{
-    width: 400px;
+    width:80%;
+    max-width: 400px;
     height: 50px;
     display: flex;
     position: relative;
 }
-.play_box > .progress > .last,.next{
-    width: 30px;
+
+/* 上一首与下一首组件，我好想不太需要 */
+/* .play_box > .progress > .last,.next{
+    width: 7.5%;
+    max-width: 30px;
     height: 50px;
     font-size: 20px;
     line-height: 50px;
@@ -78,9 +83,11 @@
     color: #FA7921;
     text-shadow: 0 0 10px #FA7921;
     cursor: pointer;
-}
+} */
+
 .play_box > .progress > .line{
-    width: 330px;
+    width: 75%;
+    max-width: 330px;
     height: 6px;
     background: white;
     position: absolute;
@@ -95,12 +102,12 @@
 .play_box > .progress > .line > .pros{
     width: 0px;
     height: 6px;
-    background: linear-gradient(to left,#F12711,#F5AF19);
+    background: linear-gradient(to left,#493382,#b74e91);
     border-radius: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 330px;
+    max-width: 100%;
 }
 .play_box > .progress > .line > .pros > .Anchor{
     width: 15px;
@@ -114,7 +121,8 @@
 }
 /* 时间进度显示 */
 .play_box > .time_show{
-    width: 100px;
+    width: 25%;
+    max-width: 100px;
     height: 20px;
     position: absolute;
     left: 50%;
